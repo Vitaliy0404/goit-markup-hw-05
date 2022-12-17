@@ -104,7 +104,11 @@ body {
     color: var(--accent-color-hover);
 }
 
-.menu-link::after {
+.menu-link-line {
+    color: var(--accent-color-hover);
+}
+
+.menu-link-line::after {
     content: "";
     position: absolute;
     left: 0;
@@ -114,15 +118,6 @@ body {
     height: 4px;
     background-color: #4D5AE5;
     border-radius: 2px;
-    opacity: 0;
-    transition: opacity var(--transition-duration), transform var(--transition-duration);
-    transform: scaleX(0);
-}
-
-.menu-link:hover::after,
-.menu-link:focus::after {
-    opacity: 1;
-    transform: scaleX(1);
 }
 
 .mail,
