@@ -543,7 +543,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
-    transition: scale var(--transition-duration);
+    transition: scale var(--transition-duration), opacity var(--transition-duration), visibility var(--transition-duration);
 }
 
 .backdrop.is-hidden {
@@ -572,6 +572,7 @@ body {
     align-items: center;
     width: 24px;
     height: 24px;
+    cursor: pointer;
     border-radius: 50%;
     background-color: var(--dark-theme-text);
     border: 1px solid rgba(0, 0, 0, 0.1);
